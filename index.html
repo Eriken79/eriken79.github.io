@@ -3,24 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Site</title>
+  <title>Bug Bounty Goods</title>
+  <link rel="stylesheet" href="style.css">
 
   <!--
-    PINTEREST DOMAIN VERIFICATION (meta tag method)
-
-    When you start the "Claim website" flow in Pinterest Business Manager,
-    it will give you a meta tag that looks like:
-
-      <meta name="p:domain_verify" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
-
-    Paste it on the line below, then commit + push. GitHub Pages will
-    redeploy automatically within ~1 minute.
+    PINTEREST DOMAIN VERIFICATION
+    If you already have a live "p:domain_verify" meta tag deployed on this
+    domain, carry it over here before you push — this file will replace
+    whatever is currently live.
   -->
-  <meta name="p:domain_verify" content="0ca44d3768971ba01b27e47f15a1ba74"/>
+  <!-- PINTEREST_VERIFY_META_TAG_HERE -->
 
 </head>
 <body>
-  <h1>Test site</h1>
-  <p>This page exists solely to satisfy Pinterest's domain verification step.</p>
+  <header>
+    <a href="/">Bug Bounty Goods</a>
+    <nav style="float:right">
+      <a href="/">Shop</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Everyday essentials, made simple</h1>
+    <p>Small-batch footwear and accessories. Free shipping over $50.</p>
+
+    <div class="grid">
+      <a class="card" href="/products/sku-001.html">
+        <img src="https://placehold.co/400x400/EEE/31343C/png?text=Canvas+Sneaker" alt="Classic Canvas Sneaker">
+        <div class="body">
+          <h3>Classic Canvas Sneaker</h3>
+          <div class="price">$49.99</div>
+        </div>
+      </a>
+      <a class="card" href="/products/sku-002.html">
+        <img src="https://placehold.co/400x400/EEE/31343C/png?text=Ankle+Boot" alt="Leather Ankle Boot">
+        <div class="body">
+          <h3>Leather Ankle Boot</h3>
+          <div class="price">$89.99</div>
+        </div>
+      </a>
+      <a class="card" href="/products/sku-003.html">
+        <img src="https://placehold.co/400x400/EEE/31343C/png?text=Running+Shoe" alt="Running Shoe - Mesh">
+        <div class="body">
+          <h3>Running Shoe - Mesh</h3>
+          <div class="price">$64.99</div>
+        </div>
+      </a>
+      <a class="card" href="/products/sku-004.html">
+        <img src="https://placehold.co/400x400/EEE/31343C/png?text=Wool+Scarf" alt="Wool Blend Scarf">
+        <div class="body">
+          <h3>Wool Blend Scarf</h3>
+          <div class="price">$24.99</div>
+        </div>
+      </a>
+      <a class="card" href="/products/sku-005.html">
+        <img src="https://placehold.co/400x400/EEE/31343C/png?text=Coffee+Mug" alt="Ceramic Coffee Mug">
+        <div class="body">
+          <h3>Ceramic Coffee Mug</h3>
+          <div class="price">$14.99</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 Bug Bounty Goods</footer>
 </body>
 </html>
